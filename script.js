@@ -90,7 +90,10 @@ document.addEventListener("DOMContentLoaded", function () {
         document.querySelector("#topics-list").innerHTML += topicListItems;
       }
     } else if (summary.classList.contains("block")) {
-      location.reload();
+      setTimeout(() => {
+        location.reload();
+      }, 3000);
+      alert("✅ Success!");
     }
   });
 });
