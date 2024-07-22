@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .unactivated {
+    @apply bg-[#4D5562];
+  }
+
+  .activated {
+    @apply bg-[#652cd1];
+    box-shadow: 0 0 0 5px #845eee44;
+  }
+
+  .was-activated {
+    @apply bg-[#652cd1];
+  }
+
+  .checkbox-label {
+    @apply bg-[#394150] text-[#A1A1A9] border border-[#A1A1A9] duration-100 cursor-pointer select-none rounded-xl p-3;
+  }
+
+  .peer-checked-sd-class {
+    @apply peer-checked/sd:bg-[#652CD1] peer-checked/sd:border-[#845EEE] peer-checked/sd:text-[#E5E7EB];
+  }
+
+  .peer-checked-ux-class {
+    @apply peer-checked/ux:bg-[#652CD1] peer-checked/ux:border-[#845EEE] peer-checked/ux:text-[#E5E7EB];
+  }
+
+  .peer-checked-gd-class {
+    @apply peer-checked/gd:bg-[#652CD1] peer-checked/gd:border-[#845EEE] peer-checked/gd:text-[#E5E7EB];
+  }
+}
